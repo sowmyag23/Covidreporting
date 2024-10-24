@@ -1,0 +1,9 @@
+{
+	"name": "covid-reporting-adf-sowmya",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9076473a-75e7-4e22-8c5e-c589d93bd54c",
+		"tenantId": "c6dbf372-8511-460f-9d8f-863d8256a37d"
+	}
+}
