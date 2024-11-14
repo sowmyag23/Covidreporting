@@ -19,13 +19,33 @@
 			"type": "secureString",
 			"metadata": "Secure string for 'accessToken' of 'ls_db_covid_cluster'"
 		},
+		"ls_sql_covid_db_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'ls_sql_covid_db'"
+		},
 		"ls_adls_covidreportingsofdl_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "https://covidreportingsofdl.dfs.core.windows.net/"
 		},
+		"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+			"type": "string",
+			"defaultValue": "1109-013010-usvoccge"
+		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"type": "string",
 			"defaultValue": "@{linkedService().sourceBaseURL}"
+		},
+		"ls_sql_covid_db_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "covid-db-s.database.windows.net"
+		},
+		"ls_sql_covid_db_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "covide-db"
+		},
+		"ls_sql_covid_db_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "adm"
 		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"type": "string",
@@ -67,11 +87,26 @@
 					"ls_db_covid_cluster_accessToken": {
 						"value": "[parameters('ls_db_covid_cluster_accessToken')]"
 					},
+					"ls_sql_covid_db_password": {
+						"value": "[parameters('ls_sql_covid_db_password')]"
+					},
 					"ls_adls_covidreportingsofdl_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_covidreportingsofdl_properties_typeProperties_url')]"
 					},
+					"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+						"value": "[parameters('ls_db_covid_cluster_properties_typeProperties_existingClusterId')]"
+					},
 					"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 						"value": "[parameters('ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url')]"
+					},
+					"ls_sql_covid_db_properties_typeProperties_server": {
+						"value": "[parameters('ls_sql_covid_db_properties_typeProperties_server')]"
+					},
+					"ls_sql_covid_db_properties_typeProperties_database": {
+						"value": "[parameters('ls_sql_covid_db_properties_typeProperties_database')]"
+					},
+					"ls_sql_covid_db_properties_typeProperties_userName": {
+						"value": "[parameters('ls_sql_covid_db_properties_typeProperties_userName')]"
 					}
 				}
 			},

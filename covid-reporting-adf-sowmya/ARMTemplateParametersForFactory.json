@@ -14,11 +14,26 @@
 		"ls_db_covid_cluster_accessToken": {
 			"value": ""
 		},
+		"ls_sql_covid_db_password": {
+			"value": ""
+		},
 		"ls_adls_covidreportingsofdl_properties_typeProperties_url": {
 			"value": "https://covidreportingsofdl.dfs.core.windows.net/"
 		},
+		"ls_db_covid_cluster_properties_typeProperties_existingClusterId": {
+			"value": "1109-013010-usvoccge"
+		},
 		"ls_http_opendata_ecdc_europa_eu_properties_typeProperties_url": {
 			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"ls_sql_covid_db_properties_typeProperties_server": {
+			"value": "covid-db-s.database.windows.net"
+		},
+		"ls_sql_covid_db_properties_typeProperties_database": {
+			"value": "covide-db"
+		},
+		"ls_sql_covid_db_properties_typeProperties_userName": {
+			"value": "adm"
 		},
 		"tr_ingest_population_data_properties_typeProperties_scope": {
 			"value": "/subscriptions/4e17efb2-7bb6-47f1-9d25-32e6d9989749/resourceGroups/covid-reporting-rg/providers/Microsoft.Storage/storageAccounts/covidreportingsowmya"
